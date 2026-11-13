@@ -1,0 +1,29 @@
+.gra-view { display:flex; flex-direction:column; gap:12px; padding:16px; min-width:280px; }
+.gra-view h3, .gra-view h4 { margin:0 0 8px; }
+.gra-row, .gra-actions, .gra-book-info { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+.gra-book-info { font-size:var(--font-smallest); color:var(--text-muted); }
+.gra-book-info button { font-size:var(--font-smallest); }
+.gra-view button { height:auto; min-height:28px; white-space:normal; padding:5px 9px; }
+.gra-book-select, .gra-position select, .gra-composer textarea { width:100%; }
+.gra-position { border:1px solid var(--background-modifier-border); border-radius:8px; padding:12px; display:flex; flex-direction:column; gap:8px; }
+.gra-unit-title { font-weight:600; }
+.gra-muted { color:var(--text-muted); font-size:var(--font-small); }
+.gra-path { overflow-wrap:anywhere; }
+.gra-excerpt pre { white-space:pre-wrap; max-height:240px; overflow:auto; font-family:var(--font-text); font-size:var(--font-small); }
+.gra-chat { min-height:120px; max-height:55vh; overflow:auto; overscroll-behavior:contain; }
+.gra-message { border-radius:8px; padding:12px; margin-bottom:10px; background:var(--background-secondary); overflow-wrap:anywhere; user-select:text; }
+.gra-user { border-left:3px solid var(--interactive-accent); }
+.gra-message-label { color:var(--text-muted); font-size:var(--font-smallest); margin-bottom:6px; }
+.gra-user-text { white-space:pre-wrap; }
+.gra-message p:first-child { margin-top:0; }
+.gra-message p:last-child { margin-bottom:0; }
+.gra-message pre { white-space:pre-wrap; }
+.gra-error { color:var(--text-error); font-size:var(--font-small); white-space:pre-wrap; overflow-wrap:anywhere; }
+.gra-composer { display:flex; flex-direction:column; gap:8px; }
+.gra-composer textarea { resize:vertical; min-height:86px; }
+.gra-map { border-bottom:1px solid var(--background-modifier-border); padding-bottom:10px; }
+.gra-map summary, .gra-excerpt summary { cursor:pointer; color:var(--text-muted); }
+.gra-modal .setting-item { align-items:flex-start; }
+.gra-modal .setting-item-control { flex:1; }
+.gra-modal textarea { width:100%; min-width:240px; }
+.gra-modal .setting-item-info { flex:0 0 26%; }

@@ -1,0 +1,11 @@
+import {readFile, mkdir, copyFile, stat} from "node:fs/promises";
+import path from "node:path";
+const vault = process.argv[2];
+if (!vault || !path.isAbsolute(vault)) throw new Error('用法：npm run install:plugin -- "Vault 的绝对路径"');
+await stat(path.join(vault, ".obsidian"));
+const manifest = JSON.parse(await readFile("dist/manifest.json", "utf8"));
+const destination = path.join(vault, ".obsidian", "plugins", manifest.id);
+await mkdir(destination, {recursive:true});
+for (const name of ["main.js","manifest.json","styles.css","LICENSE","NOTICE.md"]) await copyFile(`dist/${name}`, path.join(destination, name));
+console.log(`Installed ${manifest.name} at ${destination}`);
+console.log("请在 Obsidian 社区插件中启用；已启用的插件更新后需重新加载。");

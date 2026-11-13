@@ -1,0 +1,10 @@
+{
+  "id": "guided-reading-assistant",
+  "name": "Guided Reading Assistant",
+  "version": "0.1.0",
+  "minAppVersion": "1.8.0",
+  "description": "Read Markdown books with per-book AI prompts, reading plans, follow-up discussions, and personal understanding notes through a local Codex connection.",
+  "author": "Zijian",
+  "authorUrl": "https://github.com/zijian3",
+  "isDesktopOnly": true
+}
